@@ -1,0 +1,30 @@
+{
+    "PageTitles": {
+        "Home": "Home",
+        "AboutUs": "About Us",
+        "BoardDirectors": "Board Directors",
+        "GroupCompanies": "Group Companies",
+        "ContactUs": "Contact Us",
+        "Location": "Location",
+        "Career": "Career"
+    },
+    "DirectorTitles": {
+        "ChairmanOfTheBoard": "Chairman Of The Board",
+        "VicechairmanOfTheBoard": "Vicechairman Of The Board",
+        "BoardMember": "Board Member",
+        "GeneralManager": "General Manager"
+    },
+    "FormItems": {
+        "Name": "Name",
+        "Surname": "Surname",
+        "Email": "Email",
+        "Message": "Message",
+        "Send": "Send"
+    },
+    "FormItemRequireValidate": {
+        "Name": "{{Name}} can't be empty",
+        "Surname": "{{Surname}} can't be empty",
+        "Eamil": "{{Email}} can't be empty",
+        "Message": "{{Message}} can't be empty. Message also should be 10 characters at least"
+    }
+}

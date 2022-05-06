@@ -1,0 +1,31 @@
+{
+    "PageTitles": {
+        "Home": "Anasayfa",
+        "AboutUs": "Hakkımızda",
+        "BoardDirectors": "Yönetim Kurulu",
+        "GroupCompanies": "Grup Şirketleri",
+        "ContactUs": "İletişim",
+        "Location": "Lokasyon",
+        "Career": "Kariyer"
+    },
+    "DirectorTitles": {
+        "ChairmanOfTheBoard": "Yönetim Kurulu Başkanı",
+        "VicechairmanOfTheBoard": "Yönetim Kurulu Başkan Yardımcısı",
+        "BoardMember": "Yönetim Kurulu Üyesi",
+        "GeneralManager": "Şirket Genel Müdürü"
+    },
+    "FormItems": {
+        "Name": "Ad",
+        "Surname": "Soyad",
+        "Email": "E-Posta",
+        "Message": "Mesaj",
+        "Send": "Gönder"
+    },
+    "FormItemRequireValidate": {
+        "Name": "{{Name}} alanı boş olamaz",
+        "Surname": "{{Surname}} alanı boş olamaz",
+        "Eamil": "{{Email}} alanı boş olamaz",
+        "Message": "{{Message}} alanı boş olamaz. Mesaj en az 10 karakter olmalıdır"
+    },
+    "AboutUsPage": {}
+}

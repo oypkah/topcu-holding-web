@@ -1,13 +1,17 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import changeTitle from "../../helpers/changeTitle";
 import { ICompany } from "../../types/Company/ICompany";
 import TitleWrapper from "../TitleWrapper/TitleWrapper";
 import CompanyCard from "./CompanyCard";
 
 function GroupCompanies(props: any) {
+  const { t } = useTranslation();
+
   const COMPANIES: ICompany[] = [
     {
       id: 1,
-      title: "Reis Makina",
+      title: "REİS MAKİNA",
       subTitle: "Ticaret ve Sanayi A.Ş.",
       imgSrc: "/images/Reis-300.png",
       phoneNumber: "+90 850 222 73 47",
@@ -51,13 +55,15 @@ function GroupCompanies(props: any) {
   ];
 
   useEffect(() => {
-    document.title = "Topçu Holding - Grup Şirketleri";
+    changeTitle(t("translations:PageTitles:GroupCompanies"));
   }, []);
 
   return (
     <>
       <div>
-        <TitleWrapper>GRUP ŞİRKETLERİ</TitleWrapper>
+        <TitleWrapper>
+          {t("translations:PageTitles:GroupCompanies")}
+        </TitleWrapper>
         <div className="nc-pagebody">
           <div className="flex-row">
             {COMPANIES.map((company) => (

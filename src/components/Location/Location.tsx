@@ -1,14 +1,19 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import changeTitle from "../../helpers/changeTitle";
 import TitleWrapper from "../TitleWrapper/TitleWrapper";
 
 function Location() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = "Topçu Holding - Lokasyon";
+    changeTitle(t("translations:PageTitles:Location"));
   }, []);
+
   return (
     <>
       <div className="container w90">
-        <TitleWrapper>LOKASYON</TitleWrapper>
+        <TitleWrapper>{t("translations:PageTitles:Location")}</TitleWrapper>
         <div className="nc-map vh90 z0-1">
           <div
             className="gmap-widget h100 w100"

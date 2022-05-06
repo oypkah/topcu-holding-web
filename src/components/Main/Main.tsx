@@ -1,15 +1,18 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Page, useMainContext } from "../../contexts/MainContext";
-import renderRgb from "../../helpers/renderRgb";
 import AboutUs from "../AboutUs/AboutUs";
 import BoardDirectors from "../BoardDirectors/BoardDirectors";
 import Career from "../Career/Career";
 import Contact from "../Contact/Contact";
 import GroupCompanies from "../GroupCompanies/GroupCompanies";
+import LanguageSelector from "../Language/LanguageSelector";
 import Location from "../Location/Location";
 
 function Main() {
   const { activePage } = useMainContext();
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.title = "Topçu Holding";
@@ -119,25 +122,7 @@ function Main() {
         className="nc-main--pageoverlay"
         data-bgcolor="rgba(8,55,110,0.6)"
       ></div>
-      <div className="lang-container fs22">
-        <ul>
-          <li>
-            <a href="#">
-              <span>TR</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>EN</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>RU</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <LanguageSelector />
     </div>
   );
 }

@@ -1,8 +1,11 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function AboutUs() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = "Topçu Holding - Hakkımızda";
+    document.title = `Topçu Holding - ${t("translations:PageTitles:AboutUs")}`;
   }, []);
 
   return (
@@ -14,7 +17,7 @@ function AboutUs() {
             data-animin="fadeInUp|0.1"
             data-animout="fadeOut|0.1"
           >
-            Hakkımızda
+            {t("translations:PageTitles:AboutUs")}
           </h3>
         </div>
         <div className="nc-pagebody">
@@ -39,7 +42,7 @@ function AboutUs() {
             </div>
             <div className="flex-col-md-7 typo-light">
               <p
-                className="fs16 f-2 op-08 bold-1 animated s008"
+                className="fs18 f-2 op-08 bold-1 animated s008"
                 data-animin="fadeIn|0.4"
                 data-animout="fadeOut|0.1"
               >
@@ -54,7 +57,7 @@ function AboutUs() {
                 getirmektedir.
               </p>
               <p
-                className="fs16 f-2 op-08 bold-1 animated s008"
+                className="fs18 f-2 op-08 bold-1 animated s008"
                 data-animin="fadeIn|0.4"
                 data-animout="fadeOut|0.1"
               >
@@ -67,7 +70,7 @@ function AboutUs() {
                 yașamaktadır.
               </p>
               <p
-                className="fs16 f-2 op-08 bold-1 animated s008"
+                className="fs18 f-2 op-08 bold-1 animated s008"
                 data-animin="fadeIn|0.4"
                 data-animout="fadeOut|0.1"
               >
@@ -77,7 +80,7 @@ function AboutUs() {
                 çalıșanları ve toplum için değer üretmeyi hedeflemektedir.
               </p>
               <p
-                className="fs16 f-2 op-08 bold-1 animated s008"
+                className="fs18 f-2 op-08 bold-1 animated s008"
                 data-animin="fadeIn|0.4"
                 data-animout="fadeOut|0.1"
               >

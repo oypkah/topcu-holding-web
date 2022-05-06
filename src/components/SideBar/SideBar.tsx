@@ -1,41 +1,52 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import ISideBarItem from "../../types/SideBar/ISideBarItem";
 import SideBarItem from "./SideBarItem";
 
 function SideBar() {
+  const { t } = useTranslation();
+
   const SIDE_BAR_ITEMS: ISideBarItem[] = [
-    { id: 1, icon: "pe-7s-home", title: "Anasayfa", pageType: "home" },
-    { id: 2, icon: "pe-7s-notebook", title: "Hakkımızda", pageType: "aboutus" },
+    {
+      id: 1,
+      icon: "pe-7s-home",
+      title: t("translations:PageTitles:Home"),
+      pageType: "home",
+    },
+    {
+      id: 2,
+      icon: "pe-7s-notebook",
+      title: t("translations:PageTitles:AboutUs"),
+      pageType: "aboutus",
+    },
     {
       id: 3,
       icon: "pe-7s-users",
-      title: "Yönetim Kurulu",
+      title: t("translations:PageTitles:BoardDirectors"),
       pageType: "boardDirectors",
     },
     {
       id: 4,
       icon: "pe-7s-note2",
-      title: "Grup Şirketleri",
+      title: t("translations:PageTitles:GroupCompanies"),
       pageType: "groupCompanies",
     },
-    // { icon: "pe-7s-camera", title: "Portfolio", pageType: "another" },
-    // { icon: "pe-7s-timer", title: "when", pageType: "another" },
     {
       id: 5,
       icon: "pe-7s-mail-open-file",
-      title: "İletişim",
+      title: t("translations:PageTitles:ContactUs"),
       pageType: "contact",
     },
     {
       id: 6,
       icon: "pe-7s-map-marker",
-      title: "Lokasyonumuz",
+      title: t("translations:PageTitles:Location"),
       pageType: "location",
     },
     // {
     //   id: 7,
     //   icon: "pe-7s-camera",
-    //   title: "Kariyer",
+    //   title: t("translations:PageTitles:Career"),
     //   pageType: "career",
     // },
   ];
@@ -44,7 +55,7 @@ function SideBar() {
 
   useEffect(() => {
     setSideBarItems(SIDE_BAR_ITEMS);
-  }, []);
+  }, [t]);
 
   return (
     <ul className="nc-navigation--ul list-reset w100">

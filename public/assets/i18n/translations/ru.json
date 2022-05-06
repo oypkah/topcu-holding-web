@@ -1,0 +1,17 @@
+{
+    "PageTitles": {
+        "Home": "Home",
+        "AboutUs": "About Us",
+        "BoardDirectors": "Board Directors",
+        "GroupCompanies": "Group Companies",
+        "ContactUs": "Contact Us",
+        "Location": "Location",
+        "Career": "Career"
+    },
+    "DirectorTitles": {
+        "ChairmanOfTheBoard": "Chairman Of The Board",
+        "VicechairmanOfTheBoard": "Vicechairman Of The Board",
+        "BoardMember": "Board Member",
+        "GeneralManager": "General Manager"
+    }
+}

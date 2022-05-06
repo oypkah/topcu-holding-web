@@ -8,7 +8,6 @@ export type Page =
   | "groupCompanies"
   | "location"
   | "career";
-
 interface IRgbColor {
   red: number;
   green: number;
@@ -17,19 +16,35 @@ interface IRgbColor {
 }
 
 interface IMainContext {
+  availableLanguages: string[];
+  defaultLanguage: string;
   activePage: Page;
   setActivePage: (page: Page) => void;
 }
 
-export const MainContext = createContext<IMainContext>({} as IMainContext);
+const defaultState = {
+  availableLanguages: ["tr", "en", "ru"],
+  defaultLanguage: "tr",
+  activePage: "home",
+};
+
+export const MainContext = createContext<IMainContext>(
+  defaultState as IMainContext
+);
 
 export const useMainContext = () => useContext(MainContext);
 
 export const MainProvider = (props: any) => {
-  const [activePage, setActivePage] = useState<Page>("home");
+  const [activePage, setActivePage] = useState<Page>(
+    defaultState.activePage as Page
+  );
 
+  const availableLanguages = defaultState.availableLanguages;
+  const defaultLanguage = "tr";
   return (
-    <MainContext.Provider value={{ activePage, setActivePage }}>
+    <MainContext.Provider
+      value={{ availableLanguages, defaultLanguage, activePage, setActivePage }}
+    >
       {props.children}
     </MainContext.Provider>
   );

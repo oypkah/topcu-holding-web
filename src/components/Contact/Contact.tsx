@@ -1,15 +1,19 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import changeTitle from "../../helpers/changeTitle";
 import TitleWrapper from "../TitleWrapper/TitleWrapper";
 
 function Contact() {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    document.title = "Topçu Holding - İletişim";
+    changeTitle(t("translations:PageTitles:ContactUs"));
   }, []);
 
   return (
     <>
       <div className="container">
-        <TitleWrapper>İLETİŞİM</TitleWrapper>
+        <TitleWrapper>{t("translations:PageTitles:ContactUs")}</TitleWrapper>
         <div className="nc-pagebody">
           <div className="flex-row gt60 middle-md">
             <div className="flex-col-md-6" data-nc-sm="mr-b-40">
@@ -121,10 +125,13 @@ function Contact() {
                           <input
                             className="form-control form-widget--form-control form-control-light"
                             data-label="Name"
-                            data-msg="Lütfen isminizi girin"
+                            data-msg={t(
+                              "translations:FormItemRequireValidate:Name",
+                              { Name: t("translations:FormItems:Name") }
+                            )}
                             type="text"
                             name="fname"
-                            placeholder="İsim"
+                            placeholder={t("translations:FormItems:Name")}
                           />
                         </div>
                       </div>
@@ -136,10 +143,13 @@ function Contact() {
                           <input
                             className="form-control form-widget--form-control form-control-light"
                             data-label="Name"
-                            data-msg="Lütfen soyisminizi girin"
+                            data-msg={t(
+                              "translations:FormItemRequireValidate:Surname",
+                              { Name: t("translations:FormItems:Surname") }
+                            )}
                             type="text"
                             name="lname"
-                            placeholder="Soyisim"
+                            placeholder={t("translations:FormItems:Surname")}
                           />
                         </div>
                       </div>
@@ -150,11 +160,14 @@ function Contact() {
                           </span>
                           <input
                             className="form-control form-widget--form-control form-control-light"
-                            data-label="Email"
+                            data-label={t(
+                              "translations:FormItemRequireValidate:Email",
+                              { Name: t("translations:FormItems:Email") }
+                            )}
                             data-msg="Lütfen e-postanızı girin"
                             type="email"
                             name="email"
-                            placeholder="E-Posta"
+                            placeholder={t("translations:FormItems:Email")}
                           />
                         </div>
                       </div>
@@ -167,9 +180,12 @@ function Contact() {
                         <textarea
                           className="form-control form-widget--form-control form-control-light"
                           data-label="Message"
-                          data-msg="Lütfen mesajınızı girin (mesaj en az 10 karakterden oluşmalıdır)"
+                          data-msg={t(
+                            "translations:FormItemRequireValidate:Message",
+                            { Name: t("translations:FormItems:Message") }
+                          )}
                           name="message"
-                          placeholder="Mesajınız.."
+                          placeholder={t("translations:FormItems:Message")}
                           cols={30}
                           rows={10}
                           minLength={10}
@@ -182,7 +198,7 @@ function Contact() {
                     type="submit"
                     className="form-widget--btn w100 btn solid btn-white"
                   >
-                    Gönder
+                    {t("translations:FormItems:Send")}
                   </button>
                 </form>
                 <div className="msg-block" />
