@@ -27,5 +27,5 @@
         "Eamil": "{{Email}} alanı boş olamaz",
         "Message": "{{Message}} alanı boş olamaz. Mesaj en az 10 karakter olmalıdır"
     },
-    "AboutUsPage": {}
+    "AboutUs": {}
 }
