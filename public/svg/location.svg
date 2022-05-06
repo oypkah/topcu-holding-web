@@ -1,0 +1,13 @@
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>lokasyon-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Anasayfa-Ilan-Arama-Sonuclar" transform="translate(-129.000000, -981.000000)" fill="#BBB2A6">
+            <g id="Kart-01" transform="translate(113.000000, 758.000000)">
+                <path d="M23,231 C22.448,231 22,230.552 22,230 C22,229.447 22.448,229 23,229 C23.552,229 24,229.447 24,230 C24,230.552 23.552,231 23,231 M23,227 C21.346,227 20,228.346 20,230 C20,231.654 21.346,233 23,233 C24.654,233 26,231.654 26,230 C26,228.346 24.654,227 23,227 M23,237 C23,237 18,235 18,230 C18,227.238 20.238,225 23,225 C25.761,225 28,227.238 28,230 C28,235 23,237 23,237 M23,223 C19.14,223 16,226.14 16,230 C16,236.282 22.002,238.755 22.257,238.856 C22.496,238.952 22.748,239 23,239 C23.252,239 23.504,238.952 23.743,238.856 C23.998,238.755 30,236.282 30,230 C30,226.14 26.86,223 23,223" id="lokasyon-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

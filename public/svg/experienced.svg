@@ -1,0 +1,13 @@
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Deneyim-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Anasayfa-Ilan-Arama-Sonuclar" transform="translate(-129.000000, -950.000000)" fill="#BBB2A6">
+            <g id="Kart-01" transform="translate(113.000000, 758.000000)">
+                <path d="M23,202 L21,202 C20.448,202 20,202.447 20,203 C20,203.552 20.448,204 21,204 L23,204 C23.552,204 24,203.552 24,203 C24,202.447 23.552,202 23,202 Z M25,199 L21,199 C20.448,199 20,199.447 20,200 C20,200.552 20.448,201 21,201 L25,201 C25.552,201 26,200.552 26,200 C26,199.447 25.552,199 25,199 Z M28,206 L18,206 L18,195 L19,195 C19,196.1 19.9,197 21,197 L25,197 C26.1,197 27,196.1 27,195 L28,195 L28,206 Z M21,195 L25,195 L25,194 L21,194 L21,195 Z M28,193 L26.73,193 C26.38,192.4 25.74,192 25,192 L21,192 C20.26,192 19.62,192.4 19.27,193 L18,193 C16.9,193 16,193.899 16,195 L16,206 C16,207.1 16.9,208 18,208 L28,208 C29.1,208 30,207.1 30,206 L30,195 C30,193.899 29.1,193 28,193 Z" id="Deneyim-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

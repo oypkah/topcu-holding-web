@@ -1,0 +1,39 @@
+.lang-container {
+  position: fixed;
+  top: 25px;
+  left: 15px;
+  color: #fff;
+}
+
+.lang-container ul {
+  display: flex;
+  list-style: none;
+}
+
+.lang-container ul li:not(:last-child)::after {
+  content: "|";
+  margin: 0px 5px;
+}
+
+.lang-container ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.06em;
+}
+
+.lang-container ul li a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: #08376e;
+  transition: 0.3s all ease;
+}
+
+.lang-container li:hover + .lang-container a::after {
+  width: 100%;
+}

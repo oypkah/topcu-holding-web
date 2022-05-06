@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900");
+
+*:not(i) {
+  font-family: "Fraunces", serif !important;
+}
+
+/*===========================================*/
+/*	DESKTOP LAYOUT 
+/*===========================================*/
+
+@media (min-width: 1200px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 992px) {
+}
+
+/*===========================================*/
+/*	MOBILE & TABLET COMMON
+/*===========================================*/
+@media (min-width: 200px) and (max-width: 991px) {
+}
+
+/*===========================================*/
+/*	TABLET
+/*===========================================*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/*===========================================*/
+/*	MOBILE
+/*===========================================*/
+@media (min-width: 200px) and (max-width: 767px) {
+}
+@media (min-width: 600px) and (max-width: 767px) {
+}
+@media (min-width: 480px) and (max-width: 599px) {
+}
+@media (min-width: 200px) and (max-width: 479px) {
+}
+
+.group-company {
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.group-company img {
+  width: 215px;
+}
+
+.company {
+  min-height: 340px;
+  /* border: 1px solid #003a70; */
+}
+
+/* .company:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0%) !important;
+} */
+
+.holding-logo {
+  animation-delay: 0.1s;
+  /* background-color: #003755; */
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 50px;
+  background-image: linear-gradient(
+    0deg,
+    #ffff,
+    #dddddd,
+    #ffff,
+    #dddddd,
+    #ffff,
+    #dddddd,
+    #ffff,
+    #dddddd,
+    #ffff,
+    #dddddd,
+    #ffff,
+    #dddddd,
+    #ffff
+  );
+  /* background-image: linear-gradient(0deg, #cf5c5c, #c19b4a, #def2a0, #c6ee4a, #42eca6, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a); */
+  /* background-image: linear-gradient(0deg, #003755, #ffff); */
+  animation: animateBg 20s linear infinite !important;
+  background-size: 100% 1100%;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.nc-menutrigger {
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.nc-menutrigger:hover {
+  animation: none;
+}
+
+.font-size-15 {
+  font-size: 15px !important;
+}
+
+.group-company {
+  position: relative;
+}
+
+.company-img {
+  background: white;
+}
+
+.company-img::before {
+  top: 0;
+}
+
+.company-img::after {
+  bottom: 0;
+}
+
+.company-img::after,
+.company-img::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.3s;
+}
+
+.company-img:hover::after,
+.company-img:hover::before {
+  height: 100%;
+}
+
+.company h3 {
+  text-align: left;
+}
