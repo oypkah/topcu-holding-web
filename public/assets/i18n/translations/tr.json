@@ -1,5 +1,14 @@
 {
     "PageTitles": {
+        "Home": "ANASAYFA",
+        "AboutUs": "HAKKIMIZDA",
+        "BoardDirectors": "YÖNETİM KURULU",
+        "GroupCompanies": "GRUP ŞİRKETLERİ",
+        "ContactUs": "İLETİŞİM",
+        "Location": "LOKASYON",
+        "Career": "KARİYER"
+    },
+    "SideMenuItemTitle": {
         "Home": "Anasayfa",
         "AboutUs": "Hakkımızda",
         "BoardDirectors": "Yönetim Kurulu",

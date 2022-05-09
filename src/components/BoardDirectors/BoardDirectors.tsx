@@ -19,11 +19,8 @@ function BoardDirectors() {
 
   useEffect(() => {
     changeTitle(t("translations:PageTitles:BoardDirectors"));
-  }, []);
-
-  useEffect(() => {
     setBoardDirectors(BOARD_DIRECTORS);
-  }, [t]);
+  }, []);
 
   const titleType = {
     chairmanOfTheBoard: t("translations:DirectorTitles:ChairmanOfTheBoard"),
@@ -54,29 +51,20 @@ function BoardDirectors() {
     return (
       <>
         <div
-          className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
+          className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008 board-director"
           data-animin="fadeInUp|0.6"
           data-animout="fadeOut|0.1"
         >
-          <div
-            className="img txt-default"
-            style={{ marginBottom: 0, marginLeft: 30 }}
-          >
+          <div className="img txt-default board-director-icon">
             <span className="iconwrp">
               <i className="pe-7s-user" />
             </span>
           </div>
-          <div className="info" style={{ display: "flex" }}>
-            <h3
-              className="title mini mr-b-0 f-2 bold-1"
-              style={{ width: "300px", minWidth: "300px" }}
-            >
+          <div className="info">
+            <h3 className="title board-director-name mini mr-b-0 f-2 bold-1">
               {props.name}
             </h3>
-            <h3
-              className="title mini mr-b-0 f-2 bold-1"
-              style={{ minWidth: "400px" }}
-            >
+            <h3 className="title board-director-title mini mr-b-0 f-2 bold-1">
               {props.title}
             </h3>
           </div>
@@ -101,7 +89,7 @@ function BoardDirectors() {
         </h3>
       </div>
       <div className="nc-pagebody">
-        <div className="flex-row gt60">
+        <div className="flex-row">
           <div className="company-content">
             <div className="flex-row">
               {boardDirectors !== undefined &&

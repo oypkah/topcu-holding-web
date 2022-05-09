@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import changeTitle from "../../helpers/changeTitle";
 import TitleWrapper from "../TitleWrapper/TitleWrapper";
+import ContactInfo from "./ContactInfo";
 
 function Contact() {
   const { t } = useTranslation();
@@ -17,87 +18,7 @@ function Contact() {
         <div className="nc-pagebody">
           <div className="flex-row gt60 middle-md">
             <div className="flex-col-md-6" data-nc-sm="mr-b-40">
-              <div
-                className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-                data-animin="fadeInUp|0.3"
-                data-animout="fadeOut|0.1"
-              >
-                <div className="img txt-default">
-                  <span className="iconwrp">
-                    <i className="pe-7s-mail-open-file" />
-                  </span>
-                </div>
-                <div className="info">
-                  <h3 className="title mini mr-b-0 f-2 bold-1">
-                    <a href="mailto:info@topcuholding.com">
-                      info@topcuholding.com
-                    </a>
-                  </h3>
-                </div>
-              </div>
-              <hr
-                className="light mr-tb-20 animated s008"
-                data-animin="fadeInUp|0.3"
-                data-animout="fadeOut|0.1"
-              />
-              <div
-                className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-                data-animin="fadeInUp|0.4"
-                data-animout="fadeOut|0.1"
-              >
-                <div className="img txt-default">
-                  <span className="iconwrp">
-                    <i className="pe-7s-call" />
-                  </span>
-                </div>
-                <div className="info">
-                  <h3 className="title mini mr-b-0 f-2 bold-1">
-                    +90 850 222 73 47
-                  </h3>
-                </div>
-              </div>
-              <hr
-                className="light mr-tb-20 animated s008"
-                data-animin="fadeInUp|0.4"
-                data-animout="fadeOut|0.1"
-              />
-              <div
-                className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-                data-animin="fadeInUp|0.5"
-                data-animout="fadeOut|0.1"
-              >
-                <div className="img txt-default">
-                  <span className="iconwrp">
-                    <i className="pe-7s-global" />
-                  </span>
-                </div>
-                <div className="info">
-                  <h3 className="title mini mr-b-0 f-2 bold-1">
-                    www.topcuholding.com
-                  </h3>
-                </div>
-              </div>
-              <div
-                className="light mr-tb-20 animated s008"
-                data-animin="fadeInUp|0.5"
-                data-animout="fadeOut|0.1"
-              />
-              <div
-                className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-                data-animin="fadeInUp|0.6"
-                data-animout="fadeOut|0.1"
-              >
-                <div className="img txt-default">
-                  <span className="iconwrp">
-                    <i className="pe-7s-map-marker" />
-                  </span>
-                </div>
-                <div className="info">
-                  <h3 className="title mini mr-b-0 f-2 bold-1">
-                    Abdurrahmangazi, İmamoğlu Sokak, Sancaktepe/İstanbul
-                  </h3>
-                </div>
-              </div>
+              <ContactInfo />
             </div>
             <div className="flex-col-md-6">
               <div

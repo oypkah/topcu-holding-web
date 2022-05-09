@@ -10,37 +10,37 @@ function SideBar() {
     {
       id: 1,
       icon: "pe-7s-home",
-      title: t("translations:PageTitles:Home"),
+      title: t("translations:SideMenuItemTitle:Home"),
       pageType: "home",
     },
     {
       id: 2,
       icon: "pe-7s-notebook",
-      title: t("translations:PageTitles:AboutUs"),
+      title: t("translations:SideMenuItemTitle:AboutUs"),
       pageType: "aboutus",
     },
     {
       id: 3,
       icon: "pe-7s-users",
-      title: t("translations:PageTitles:BoardDirectors"),
+      title: t("translations:SideMenuItemTitle:BoardDirectors"),
       pageType: "boardDirectors",
     },
     {
       id: 4,
       icon: "pe-7s-note2",
-      title: t("translations:PageTitles:GroupCompanies"),
+      title: t("translations:SideMenuItemTitle:GroupCompanies"),
       pageType: "groupCompanies",
     },
     {
       id: 5,
       icon: "pe-7s-mail-open-file",
-      title: t("translations:PageTitles:ContactUs"),
+      title: t("translations:SideMenuItemTitle:ContactUs"),
       pageType: "contact",
     },
     {
       id: 6,
       icon: "pe-7s-map-marker",
-      title: t("translations:PageTitles:Location"),
+      title: t("translations:SideMenuItemTitle:Location"),
       pageType: "location",
     },
     // {

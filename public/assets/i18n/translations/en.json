@@ -1,5 +1,14 @@
 {
     "PageTitles": {
+        "Home": "HOME",
+        "AboutUs": "ABOUT US",
+        "BoardDirectors": "BOARD DIRECTORS",
+        "GroupCompanies": "GROUP COMPANIES",
+        "ContactUs": "CONTACT US",
+        "Location": "LOCATION",
+        "Career": "CAREER"
+    },
+    "SideMenuItemTitle": {
         "Home": "Home",
         "AboutUs": "About Us",
         "BoardDirectors": "Board Directors",

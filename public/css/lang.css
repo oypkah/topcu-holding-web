@@ -1,8 +1,9 @@
 .lang-container {
   position: fixed;
-  top: 25px;
-  left: 15px;
+  top: 30px;
+  left: 30px;
   color: #fff;
+  z-index: 1;
 }
 
 .lang-container ul {
@@ -15,25 +16,20 @@
   margin: 0px 5px;
 }
 
-.lang-container ul li a {
+.lang-container ul li label {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
-.lang-container ul li a::after {
-  content: "";
+/* .lang-container ul li label::after {
+  content: "_";
   position: absolute;
   top: 100%;
   left: 0;
-  width: 10px;
   height: 2px;
-  margin-top: 4px;
+  width: 50%;
   background-color: #08376e;
-  transition: 0.3s all ease;
-}
-
-.lang-container li:hover + .lang-container a::after {
-  width: 100%;
-}
+} */

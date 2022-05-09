@@ -27,9 +27,6 @@ function App() {
   return (
     <MainProvider>
       <div className="nc-mainwrapper">
-        <a href="#nc-navigation" className="nc-menutrigger">
-          <span className="nc-menutrigger--span" />
-        </a>
         <Main />
         <nav id="nc-navigation" className="nc-navigation bg-white shadow-large">
           <div className="min-vh-h100 flex-cc flex-column pd-tb-30">

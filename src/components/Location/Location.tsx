@@ -12,18 +12,15 @@ function Location() {
 
   return (
     <>
-      <div className="container w90">
+      <div className="container">
         <TitleWrapper>{t("translations:PageTitles:Location")}</TitleWrapper>
-        <div className="nc-map vh90 z0-1">
-          <div
-            className="gmap-widget h100 w100"
-            data-fullh="y"
-            data-fullh-wrp="flex-col-lg-6"
-            data-map-latitude="40.99907689692691"
-            data-map-longitude="29.23431481341011"
-            data-map-markerhd="Envato"
-            data-map-markerhtml='<div class="pd-10 align-c"><h2 class="fs18 mr-b-10">Envato</h2><p class="fs16 mr-0">PO Box 16122, Collins Street West,<br>Victoria 8007, Australia</p></div>'
-          ></div>
+        <div className="nc-map" style={{ height: "65vh" }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.318494059441!2d29.232368842170803!3d40.9964016554319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad1d523220c05%3A0x51479d5ba23a1114!2zUkXEsFMgTUFLxLBOQQ!5e0!3m2!1str!2str!4v1652079412635!5m2!1str!2str"
+            style={{ border: 0, width: "100%", height: "100%" }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </>

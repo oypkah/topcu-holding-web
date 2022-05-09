@@ -1,4 +1,5 @@
 import { ICompany } from "../../types/Company/ICompany";
+import InfoBox from "../InfoBox/InfoBox";
 
 interface IProp {
   company: ICompany;
@@ -43,110 +44,9 @@ function CompanyCard({ company }: IProp) {
               data-animin="fadeInUp|0.5"
               data-animout="fadeOut|0.1"
             />
-            <div
-              className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-              data-animin="fadeInUp|0.3"
-              data-animout="fadeOut|0.1"
-            >
-              <div
-                className="img txt-default"
-                style={{ marginBottom: 0, marginLeft: 30 }}
-              >
-                <span className="iconwrp">
-                  <i className="pe-7s-mail-open-file" />
-                </span>
-              </div>
-              <div className="info">
-                <h3 className="title mini mr-b-0 f-2 bold-1">
-                  <a href={`mailto:${company.email}`}>{company.email}</a>
-                </h3>
-              </div>
-            </div>
-            <hr
-              className="light mr-tb-20 animated s008"
-              data-animin="fadeInUp|0.3"
-              data-animout="fadeOut|0.1"
-            />
-            <div
-              className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-              data-animin="fadeInUp|0.4"
-              data-animout="fadeOut|0.1"
-            >
-              <div
-                className="img txt-default"
-                style={{ marginBottom: 0, marginLeft: 30 }}
-              >
-                <span className="iconwrp">
-                  <i className="pe-7s-call" />
-                </span>
-              </div>
-              <div className="info">
-                <h3 className="title mini mr-b-0 f-2 bold-1">
-                  <a href={`tel: ${company.phoneNumber}`}>
-                    {company.phoneNumber}
-                  </a>
-                </h3>
-              </div>
-            </div>
-            <hr
-              className="light mr-tb-20 animated s008"
-              data-animin="fadeInUp|0.4"
-              data-animout="fadeOut|0.1"
-            />
-            <div
-              className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-              data-animin="fadeInUp|0.5"
-              data-animout="fadeOut|0.1"
-            >
-              <div
-                className="img txt-default"
-                style={{ marginBottom: 0, marginLeft: 30 }}
-              >
-                <span className="iconwrp">
-                  <i className="pe-7s-global" />
-                </span>
-              </div>
-              <div className="info">
-                <h3 className="title mini mr-b-0 f-2 bold-1">
-                  <a href={company.webSite} target="_blank">
-                    {company.webSite
-                      .replace("http://", "")
-                      .replace("https://", "")}
-                  </a>
-                </h3>
-              </div>
-            </div>
-            <hr
-              className="light mr-tb-20 animated s008"
-              data-animin="fadeInUp|0.5"
-              data-animout="fadeOut|0.1"
-            />
-            <div
-              className="info-obj mr-0 img-l middle-md g20 tiny typo-light animated s008"
-              data-animin="fadeInUp|0.6"
-              data-animout="fadeOut|0.1"
-            >
-              <div
-                className="img txt-default"
-                style={{ marginBottom: 0, marginLeft: 30 }}
-              >
-                <span className="iconwrp">
-                  <i className="pe-7s-map-marker" />
-                </span>
-              </div>
-              <div className="info">
-                <h3 className="title mini mr-b-0 f-2 bold-1">
-                  <a href={company.addressGoogleMapsLink} target="_blank">
-                    {company.address}
-                  </a>
-                </h3>
-              </div>
-            </div>
-            <hr
-              className="light mr-tb-20 animated s008"
-              data-animin="fadeInUp|0.5"
-              data-animout="fadeOut|0.1"
-            />
+            {company.companyInfos.map((companyInfo) => (
+              <InfoBox key={companyInfo.id} infoBox={companyInfo} />
+            ))}
           </div>
         </div>
       </div>
