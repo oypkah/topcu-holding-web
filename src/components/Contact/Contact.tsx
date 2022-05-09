@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import changeTitle from "../../helpers/changeTitle";
+import FormGroup from "../Form/FormGroup";
+import Input from "../Form/Input";
+import Textarea from "../Form/Textarea";
 import TitleWrapper from "../TitleWrapper/TitleWrapper";
 import ContactInfo from "./ContactInfo";
 
@@ -39,69 +42,53 @@ function Contact() {
                     />
                     <div className="flex-row gt20 mb5">
                       <div className="flex-col-md-6">
-                        <div className="form-group">
-                          <span className="form-widget--icon flex-cc txt-default">
-                            <i className="ti-user" />
-                          </span>
-                          <input
-                            className="form-control form-widget--form-control form-control-light"
-                            data-label="Name"
-                            data-msg={t(
+                        <FormGroup icon="ti-user">
+                          <Input
+                            dataLabel="Name"
+                            dataMessage={t(
                               "translations:FormItemRequireValidate:Name",
                               { Name: t("translations:FormItems:Name") }
                             )}
                             type="text"
-                            name="fname"
+                            name="firstname"
                             placeholder={t("translations:FormItems:Name")}
                           />
-                        </div>
+                        </FormGroup>
                       </div>
                       <div className="flex-col-md-6">
-                        <div className="form-group">
-                          <span className="form-widget--icon flex-cc txt-default">
-                            <i className="ti-user" />
-                          </span>
-                          <input
-                            className="form-control form-widget--form-control form-control-light"
-                            data-label="Name"
-                            data-msg={t(
+                        <FormGroup icon="ti-user">
+                          <Input
+                            dataLabel="Surname"
+                            dataMessage={t(
                               "translations:FormItemRequireValidate:Surname",
                               { Name: t("translations:FormItems:Surname") }
                             )}
                             type="text"
-                            name="lname"
+                            name="lastname"
                             placeholder={t("translations:FormItems:Surname")}
                           />
-                        </div>
+                        </FormGroup>
                       </div>
                       <div className="flex-col-md-12">
-                        <div className="form-group">
-                          <span className="form-widget--icon flex-cc txt-default">
-                            <i className="ti-email" />
-                          </span>
-                          <input
-                            className="form-control form-widget--form-control form-control-light"
-                            data-label={t(
+                        <FormGroup icon="ti-email">
+                          <Input
+                            dataLabel="Email"
+                            dataMessage={t(
                               "translations:FormItemRequireValidate:Email",
                               { Name: t("translations:FormItems:Email") }
                             )}
-                            data-msg="Lütfen e-postanızı girin"
                             type="email"
                             name="email"
                             placeholder={t("translations:FormItems:Email")}
                           />
-                        </div>
+                        </FormGroup>
                       </div>
                     </div>
                     <div className="flex-col-md-12">
-                      <div className="form-group">
-                        <span className="form-widget--icon flex-cc txt-default">
-                          <i className="ti-text" />
-                        </span>
-                        <textarea
-                          className="form-control form-widget--form-control form-control-light"
-                          data-label="Message"
-                          data-msg={t(
+                      <FormGroup icon="ti-text">
+                        <Textarea
+                          dataLabel="Message"
+                          dataMessage={t(
                             "translations:FormItemRequireValidate:Message",
                             { Name: t("translations:FormItems:Message") }
                           )}
@@ -112,7 +99,7 @@ function Contact() {
                           minLength={10}
                           defaultValue={""}
                         />
-                      </div>
+                      </FormGroup>
                     </div>
                   </div>
                   <button

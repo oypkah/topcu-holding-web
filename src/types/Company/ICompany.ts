@@ -6,9 +6,4 @@ export interface ICompany {
   subTitle: string;
   imgSrc: string;
   companyInfos: IInfoBox[];
-  // phoneNumber: string;
-  // email: string;
-  // webSite: string;
-  // address: string;
-  // addressGoogleMapsLink?: string;
 }
