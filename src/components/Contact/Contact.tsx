@@ -30,7 +30,7 @@ function Contact() {
                 data-animout="fadeOut|0.1"
               >
                 <form
-                  action="form-data/formdata.php"
+                  action="/"
                   className="form-widget form-widget-inputicon"
                   data-popup="popup-contact"
                 >
@@ -61,7 +61,7 @@ function Contact() {
                             dataLabel="Surname"
                             dataMessage={t(
                               "translations:FormItemRequireValidate:Surname",
-                              { Name: t("translations:FormItems:Surname") }
+                              { Surname: t("translations:FormItems:Surname") }
                             )}
                             type="text"
                             name="lastname"
@@ -75,7 +75,7 @@ function Contact() {
                             dataLabel="Email"
                             dataMessage={t(
                               "translations:FormItemRequireValidate:Email",
-                              { Name: t("translations:FormItems:Email") }
+                              { Email: t("translations:FormItems:Email") }
                             )}
                             type="email"
                             name="email"
@@ -90,7 +90,7 @@ function Contact() {
                           dataLabel="Message"
                           dataMessage={t(
                             "translations:FormItemRequireValidate:Message",
-                            { Name: t("translations:FormItems:Message") }
+                            { Message: t("translations:FormItems:Message") }
                           )}
                           name="message"
                           placeholder={t("translations:FormItems:Message")}

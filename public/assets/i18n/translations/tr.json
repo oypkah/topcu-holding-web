@@ -33,8 +33,7 @@
     "FormItemRequireValidate": {
         "Name": "{{Name}} alanı boş olamaz",
         "Surname": "{{Surname}} alanı boş olamaz",
-        "Eamil": "{{Email}} alanı boş olamaz",
+        "Email": "{{Email}} alanı boş olamaz",
         "Message": "{{Message}} alanı boş olamaz. Mesaj en az 10 karakter olmalıdır"
-    },
-    "AboutUs": {}
+    }
 }
