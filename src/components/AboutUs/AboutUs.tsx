@@ -1,12 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function AboutUs() {
+  const [paragraphs, setParagraphs] = useState<string[]>();
+
   const { t } = useTranslation();
 
   useEffect(() => {
     document.title = `Topçu Holding - ${t("translations:PageTitles:AboutUs")}`;
+    setParagraphs(t("translations:AboutUs", { returnObjects: true }));
   }, []);
+
+  useEffect(() => {
+    setParagraphs(t("translations:AboutUs", { returnObjects: true }));
+  }, [t]);
 
   return (
     <>
@@ -41,56 +48,17 @@ function AboutUs() {
               </div>
             </div>
             <div className="flex-col-md-7 typo-light">
-              <p
-                className="fs18 f-2 op-08 bold-1 animated s008"
-                data-animin="fadeIn|0.4"
-                data-animout="fadeOut|0.1"
-              >
-                Topçu Holding; yüz yılı așan ticari yolculuğunda ülkemizin
-                sanayileșme ve globalleșme sürecine katkı sağlamıș, istikrarı ve
-                etik değerlere bağlılığıyla faaliyet gösterdiği makine, inșaat,
-                enerji, hırdavat ve nalburiye sektörlerinde daima öncü konumunu
-                korumuștur. Geçmișten gelen güvenilirliğini, yenilikçi ve
-                dinamik bir yaklașımla birleștiren Topçu Holding, teknolojik
-                gelișmeleri takip etmekte ve tüm dünyadan özenle seçtiği küresel
-                markaların ürünlerini sanayi ve üretim dünyasıyla bir araya
-                getirmektedir.
-              </p>
-              <p
-                className="fs18 f-2 op-08 bold-1 animated s008"
-                data-animin="fadeIn|0.4"
-                data-animout="fadeOut|0.1"
-              >
-                “Birlikten Kuvvet Doğar” anlayıșını benimseyen Topçu Holding,
-                Türkiye’nin dört bir yanındaki bayileriyle 100’ün üzerinde dünya
-                markasının ürünlerini tüketiciyle bulușturmanın yanı sıra,
-                sürdürdüğü AR-GE çalıșmaları neticesinde geliștirdiği yerli
-                üretim ürünleri yurtiçi ve yurtdıșı pazarına sunmakta, ülke
-                ekonomisine ve istihdama sağladığı katkının haklı onurunu
-                yașamaktadır.
-              </p>
-              <p
-                className="fs18 f-2 op-08 bold-1 animated s008"
-                data-animin="fadeIn|0.4"
-                data-animout="fadeOut|0.1"
-              >
-                Faaliyetlerini müșteri memnuniyeti, sürdürülebilirlik ve
-                toplumsal sorumluluk anlayıșıyla yürüten Topçu Holding; bugün
-                olduğu gibi gelecekte de müșterileri, çözüm ortakları,
-                çalıșanları ve toplum için değer üretmeyi hedeflemektedir.
-              </p>
-              <p
-                className="fs18 f-2 op-08 bold-1 animated s008"
-                data-animin="fadeIn|0.4"
-                data-animout="fadeOut|0.1"
-              >
-                Topçu Holding olarak tarihi, milli ve kültürel sorumluluğumuzun
-                farkındayız. Türkiye distribütörlüğünü yaptığımız global
-                markalarımız, yerli ve milli üretimle ekonomimize katkı sağlamak
-                konusundaki kararlılığımız ve olușturduğumuz istihdam olanakları
-                ile geçmiște olduğu gibi yarın da ilerlemeye ve ülkemize katkı
-                sağlamaya devam edeceğiz.
-              </p>
+              {paragraphs?.map((paragraph) => {
+                return (
+                  <p
+                    className="fs18 f-2 op-08 bold-1 animated s008"
+                    data-animin="fadeIn|0.4"
+                    data-animout="fadeOut|0.1"
+                  >
+                    {paragraph}
+                  </p>
+                );
+              })}
             </div>
           </div>
         </div>

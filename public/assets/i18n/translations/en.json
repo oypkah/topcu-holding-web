@@ -34,6 +34,12 @@
         "Name": "{{Name}} can't be empty",
         "Surname": "{{Surname}} can't be empty",
         "Email": "{{Email}} can't be empty",
-        "Message": "{{Message}} can't be empty. Message also should be 10 characters at least"
-    }
+        "Message": "{{Message}} can't be empty and also should be 10 characters at least"
+    },
+    "AboutUs": [
+        "Over hundred years of commercial journey, Topçu Holding has contributed to industrialization and globalization processes of our country and has always maintained its pioneering position in machinery, construction, energy, hardware sectors with its stability and commitment to ethical values. Combining the trust gained from the past with innovative and dynamic approaches, Topçu Holding follows technological developments and offers products of carefully selected global brands to industry and production world.",
+        "Embracing the concept “Strength lies in unity”, Topçu Holding represents products of more than hundred global brands through its dealers network within Turkey; besides, with the studies of R&D department develops, designs and manufactures products supplied to local and global markets. Topçu Holding is always proud of its contribution to national economy and employment.",
+        "Topçu Holding carries out its activities with focusing on customer satisfaction, sustainability and social responsibility and continuously creates value for its customers, solution partners, employees and society.",
+        "As Topçu Holding, we are aware of our historical, national and cultural responsibility. Therefore we are always committed to progress and contribute to our country with our distributorship of global brands, determination of economic development with local national production facilities and increasing employment opportunities."
+    ]
 }
